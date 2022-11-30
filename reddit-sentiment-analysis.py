@@ -272,11 +272,11 @@ def main():
     start_time = time.time()
     
     # reddit client
-    reddit = praw.Reddit(user_agent="Comment Extraction",
-                         client_id="",
-                         client_secret="",
-                         username="",
-                         password="")
+    reddit = praw.Reddit(user_agent="test",
+                         client_id="Njsa5nEIEZo_fw1eZ6Jeaw",
+                         client_secret="s_ay0DlEShsU98VYMrr05Mlfobtttg",
+                         username="peter09231023",
+                         password="Babson0821")
 
     posts, c_analyzed, tickers, titles, a_comments, picks, subs, picks_ayz = data_extractor(reddit)
     symbols, times, top = print_helper(tickers, picks, c_analyzed, posts, subs, titles, time, start_time)
